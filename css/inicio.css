@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
+
 body {
-    background-color: black;
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(60deg,#0031FF,#8415FF,#F200FF,#FF4800,#3FFF00);
+    background-size: 700% 700%;
+    animation: color 5s ease-in-out infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,18 +14,31 @@ body {
     width: 100%;
 }
 
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
 h1 {
     color: white;
-    font-size: 148px;
+    font-size: 50spx;
     text-align: center;
 }
 
 button {
-    background-color: rgb(196, 126, 35);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(119, 0, 255);
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 24px;
+    font-weight: 800;
     cursor: pointer;
 }
